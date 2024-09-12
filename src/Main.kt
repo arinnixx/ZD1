@@ -1,11 +1,16 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import kotlin.math.pow
+import kotlin.math.log
 fun main() {
-    val text
+    println("Введите строку символов: ")
+    val text = readln()
     var result=""
     var count = 1
     var previous = text[0]
-    for(i in 1 .. text.lenght-1)
+
+
+    for(i in 1 .. text.length-1)
     {
         if(previous == text[i])
         {
